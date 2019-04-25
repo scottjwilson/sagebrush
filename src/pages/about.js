@@ -1,18 +1,25 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { FaCartPlus } from "react-icons/fa"
+
 import { graphql } from "gatsby"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 import Info from "../components/Home/Info"
 
-const IndexPage = ({ data }) => (
+const AboutPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title="About"
+      keywords={[
+        `sagebrush cafe about`,
+        `coffee shop antelope valley`,
+        `sagebrush cage quartz hill`,
+      ]}
+    />
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      title="sagebrush cafe"
-      styleClass="default-background"
+      title="about us"
+      styleClass="about-background"
     />
     <Info />
   </Layout>
@@ -20,7 +27,7 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "bg.jpg" }) {
+    img: file(relativePath: { eq: "bg-about.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -30,4 +37,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default AboutPage
