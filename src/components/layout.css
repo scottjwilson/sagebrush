@@ -64,3 +64,8 @@ h6 {
   background-color: var(--darkBrown);
   color: var(--mainOrange);
 }
+
+.menu,
+.contact {
+  background-color: var(--mainGrey);
+}
