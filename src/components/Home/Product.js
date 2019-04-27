@@ -7,10 +7,10 @@ export default function Product({ product }) {
       <div className="card" style={{ minHeight: "100" }} />
       <Img fluid={product.image.fluid} className="card-img-top" />
       <div className="card-body text-center">
-        <h6>{product.title}</h6>
+        <h5>{product.title}</h5>
         <h6>{product.price}</h6>
         <button
-          className="snipcart-add-item btn btn-orange mt-3 text-capitalize"
+          className="snipcart-add-item btn btn-green mt-3 text-capitalize"
           data-item-id={product.id}
           data-item-name={product.title}
           data-item-price={product.price}

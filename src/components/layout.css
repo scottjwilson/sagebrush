@@ -1,6 +1,6 @@
 :root {
-  --mainGreen: #028352;
-  --mainGrey: #ece8dc;
+  --mainGreen: #00bf77;
+  --mainGrey: #fffbef;
   --mainBrown: #816e55;
   --darkBrown: #2d1e1f;
   --mainOrange: #f37619;
@@ -11,7 +11,7 @@
 body {
   background: var(--mainWhite);
   color: var(--mainDark);
-  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  font-family: "Open Sans", sans-serif !important;
 }
 
 h1,
@@ -20,8 +20,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Courier New", "Courier New", Courier, monospace !important;
-  letter-spacing: 0.25rem !important;
+  font-family: "Dosis", sans-serif !important;
+  letter-spacing: 0.25rem;
 }
 .text-green {
   color: var(--mainGreen);
@@ -34,12 +34,12 @@ h6 {
 
 .default-background,
 .about-background {
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 1 !important;
-  background: linear-gradient(rgba(0, 95, 59, 0.5), rgba(0, 0, 0, 0.1));
+  background: linear-gradient(rgba(23, 71, 53, 0.5), rgba(23, 71, 53, 0.5));
   background-position: center;
   background-size: cover;
 }
@@ -48,21 +48,21 @@ h6 {
   min-height: 60vh;
 }
 
-.btn-orange {
-  color: var(--mainOrange);
-  border-color: var(--mainOrange);
+.btn-green {
+  color: var(--mainGreen);
+  border-color: var(--mainGreen);
   padding: 1rem;
 }
 
-.btn-orange:hover {
-  background: var(--mainYellow);
-  color: var(--mainBrown);
+.btn-green:hover {
+  background-color: var(--mainGreen);
+  color: var(--mainWhite);
   border-color: var(--mainBrown);
 }
 
 .footer {
-  background-color: var(--darkBrown);
-  color: var(--mainOrange);
+  background-color: var(--mainDark);
+  color: var(--mainGreen);
 }
 
 .menu,

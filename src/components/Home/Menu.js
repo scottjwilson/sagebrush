@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Img from "gatsby-image"
 import Title from "../Globals/Title"
 
 const getCategories = items => {
@@ -48,7 +49,7 @@ export default class Menu extends Component {
                     <button
                       type="button"
                       key={index}
-                      className="btn btn-orange text-capitalize m-3"
+                      className="btn btn-green text-capitalize m-3"
                       onClick={() => {
                         this.handleItems(category)
                       }}
@@ -67,13 +68,13 @@ export default class Menu extends Component {
                     key={node.id}
                     className="col-11 col-md-6 my-3 d-flex mx-auto"
                   >
-                    <div>{/* <Img fixed={node.image.fixed} /> */}</div>
+                    <div>{/* <Img fluid={node.image.fixed} /> */}</div>
                     {/* item text */}
                     <div className="flex-grow-1 px-3">
                       <div className="d-flex justify-content-between">
-                        <h6 className="mb-0">
+                        <h4 className="mb-0">
                           <small className="text-capitalize">{node.name}</small>
-                        </h6>
+                        </h4>
                         <h6 className="mb-0">${node.price}</h6>
                       </div>
                       <p className="text-muted">
