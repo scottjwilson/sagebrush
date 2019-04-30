@@ -52,8 +52,8 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Dosis`,
-            variants: [`400`, `500`, `600`, `700`, `800`],
+            family: `Yanone Kaffeesatz`,
+            variants: [`400`, `700`],
           },
           {
             family: `Open Sans`,

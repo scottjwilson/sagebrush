@@ -6,6 +6,7 @@
   --mainOrange: #f37619;
   --mainWhite: #fff;
   --mainDark: #222;
+  \--secondarygreen: #00ef95;
 }
 
 body {
@@ -20,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Dosis", sans-serif !important;
+  font-family: "Yanone Kaffeesatz", sans-serif !important;
   letter-spacing: 0.25rem;
 }
 .text-green {
@@ -34,7 +35,7 @@ h6 {
 
 .default-background,
 .about-background {
-  min-height: 70vh;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,4 +69,38 @@ h6 {
 .menu,
 .contact {
   background-color: var(--mainGrey);
+}
+
+.demo-bg {
+  background: var(--mainGreen);
+  margin-top: 60px;
+}
+.business-hours {
+  background: linear-gradient(var(--secondaryGreen), var(--mainDark));
+  padding: 40px 14px;
+  margin-top: -15px;
+  position: relative;
+}
+.business-hours:before {
+  content: "";
+  width: 23px;
+  height: 23px;
+}
+.business-hours .title {
+  font-size: 20px;
+  color: #bbb;
+  text-transform: uppercase;
+  padding-left: 5px;
+  border-left: 4px solid var(--mainGreen);
+}
+.business-hours li {
+  color: #888;
+  line-height: 30px;
+  border-bottom: 1px solid #333;
+}
+.business-hours li:last-child {
+  border-bottom: none;
+}
+.business-hours .opening-hours li.today {
+  color: #ffac0c;
 }

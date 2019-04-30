@@ -9,18 +9,15 @@ export default function Info() {
         <div className="row" />
         <div className="col-10 col-sm-8 mx-auto text-center">
           <p className="lead text-muted mb-5">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
-            quo inventore mollitia assumenda alias accusantium. Dolorem tenetur
-            minus ullam commodi libero, temporibus deleniti repudiandae odio
-            enim eum? A atque quidem dignissimos. Illum, eius? Minus laboriosam
-            voluptate perspiciatis velit ab adipisci molestiae sint ea, suscipit
-            labore? Repellat rerum omnis neque quidem.
+            In 2009, two high school teachers set out to bring something new to
+            their neighborhood in the Antelope Valley. Opening a coffee and art
+            house in the heart of Quartz Hill, they brought community culture to
+            the fore and, equally importantly, brought gourmet coffee to a
+            neighborhood in need of exactly that. Locally owned and operated,
+            Sagebrush Café now continues a history of employing locally,
+            sourcing goods locally, serving food and drinks of the highest
+            quality and exploring new ideas.﻿
           </p>
-          <Link to="/about/">
-            <button className="btn text-uppercase btn-orange">
-              About page
-            </button>
-          </Link>
         </div>
       </div>
     </section>

@@ -44,7 +44,7 @@ export default function Contact() {
               />
             </div>
             {/* submit */}
-            <button className="btn btn-orange btn-block text-capitalize mt-5">
+            <button className="btn btn-green btn-block text-capitalize mt-5">
               Submit
             </button>
           </form>
